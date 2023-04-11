@@ -1,0 +1,50 @@
+.navbarUl {
+    display: flex;
+    justify-content: space-around;
+
+    color: white;
+
+    font-size: 48px;
+}
+
+.navbarUlLi {
+    position: relative;
+}
+
+.navbarUlLi::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+.navbarUlLiUl {
+    /* position: absolute;
+    width: 100%; */
+    position: relative;
+    /* left: 100px;
+    top: 0; */
+}
+
+.navbarUlLiUl::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+/* .navbarUlLiUl {
+    backdrop-filter: blur(10px);
+} */
